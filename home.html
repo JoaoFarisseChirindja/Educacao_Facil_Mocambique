@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" href="Ionicons/css/ionicons.min.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+      <div class="header-top">
+  
+        <div class="container">
+  
+          <ul class="header-social-container">
+  
+            <li>
+              <a href="https://www.facebook.com/sabocarlosalberto" class="social-link">
+                <ion-icon class="ion-social-facebook-outline"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://www.twitter.com/sabo_Alberto" class="social-link">
+                <ion-icon class="ion-social-twitter-outline"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://www.instagram.com/sabo__ca/" class="social-link">
+                <ion-icon class="ion-social-instagram-outline"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon class="ion-social-linkedin-outline"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+  
+          <div class="header-alert-news">
+            <p>
+              <b>Educaçao FAcil Moçambique</b>
+            A soluçao para procura de escolas e professores em Moçambique
+            </p>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <div class="header-main">
+  
+        <div class="container">
+  
+          <a href="#" class="header-logo">
+            Educacao Facil Mocambique 
+          </a>
+  
+          <div class="header-search-container">
+            <form action="pesquisa.php" method="POST">
+              <input type="search" name="search_box" class="search-field" placeholder="pesquise aqui...">
+              <button class="search-btn" type="submit" name="search_btn" >
+                <ion-icon class="ion-android-search" ></ion-icon>
+              </button>
+            </form>
+          </div>
+  
+          <div class="header-user-actions">
+  
+            <button class="action-btn" id="user-btn">
+            <i class="bx bx-user"></i>
+            </button>
+  
+          </div>
+        </div>
+      </div>
+  
+      <nav class="desktop-navigation-menu">
+  
+        <div class="container">
+  
+          <ul class="desktop-menu-category-list">
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Home</a>
+            </li>
+  
+            
+            <li class="menu-category">
+              <a href="#" class="menu-title">Escolas Publicas</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Primaria</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Secundaria</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Tecnico Medio</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Superior</a>
+                </li>
+  
+              </ul>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Escolas Privadas</a>
+  
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <a href="#">Pre-escolar</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Primaria</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Secundaria</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Tecnico Medio</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Superior</a>
+                </li>
+  
+              </ul>
+            </li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Professores</a>
+              <ul class="dropdown-list"></ul>
+              
+            </li>
+
+          </ul>
+  
+        </div>
+  
+      </nav>
+  
+      <div class="mb">
+        <div class="mobile-bottom-navigation">
+  
+          <button class="action-btn" data-mobile-menu-open-btn>
+            <i class="bx bx-menu"></i>
+          </button>
+  
+  
+          <button class="action-btn">
+            <a href="#"><ion-icon class="ion-university"></ion-icon></a>
+            <span class="count"></span>
+          </button>
+  
+          <button class="action-btn" id="user-btn">
+          <a href="#"><ion-icon class="ion-android-home"></ion-icon></a>
+          </button>
+  
+          <button class="action-btn">
+            <a href="#"><ion-icon class="ion-ios-people-outline"></ion-icon></a>
+            <span class="count"></span>
+          </button>
+  
+          <button class="action-btn" data-mobile-menu-open-btn>
+            <i class="ion-map"></i>
+          </button>
+  
+        </div>
+  
+      <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+  
+        <div class="menu-top">
+          <h2 class="menu-title">Menu</h2>
+  
+          <button class="menu-close-btn" data-mobile-menu-close-btn>
+            <ion-icon class="ion-android-close"></ion-icon>
+          </button>
+        </div>
+  
+        <ul class="mobile-menu-category-list">
+  
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+  
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Encontrar </p>
+  
+              <div>
+                <ion-icon class="ion-ios-plus-empty" class="add-icon"></ion-icon>
+                <ion-icon class="ion-android-remove" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Escolas</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Universidades</a>
+              </li>
+  
+          
+  
+          </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Contacto</a>
+            </li>
+  
+          <li class="menu-category">
+            <a href="encomenda.php" class="menu-title">Professores</a>
+          </li>
+  
+          <li class="menu-category">
+            <a href="meuperfil.php" class="menu-title">Meu perfil</a>
+          </li>
+  
+        </ul>
+  
+        <div class="menu-bottom">
+        
+  
+          <ul class="menu-social-container">
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon class="ion-social-facebook-outline"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon class="ion-social-twitter-outline"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon class="ion-social-instagram-outline"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon class="ion-social-linkedin-outline"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </nav>
+    </header>
+
+    <div class="banner">
+
+      <div id="map">
+
+      </div>
+      <div class="filtragem">
+        <h1>Filtragem</h1>
+        <div class="classes">
+          <h2>Classes</h2>
+          <div class="lasses">
+            <label for="#">Publicas</label>
+            <input type="checkbox" name="publicas" id="">
+            <label for="#">Privadas</label>
+            <input type="checkbox" name="publicas" id="">
+          </div>
+
+        </div>
+        <div class="filtro">
+          <div class="Extra-Cu">
+            <h2>Atividades Extra-curicullares </h2>
+            <div class="lasses">
+              <label for="#">Xadrez</label>
+              <input type="checkbox" name="Xadrez" id="">
+              <label for="#">Taekwondo</label>
+              <input type="checkbox" name="Taekwondo" id="">
+            </div>
+              <div class="lasses">
+              <label for="#">Natacao</label>
+              <input type="checkbox" name="Natacao" id="">
+              <label for="#">Danca</label>
+              <input type="checkbox" name="Danca" id="">
+            </div>
+          </div>
+          <div class="Patrimo">
+            <h2>Patrimonio</h2>
+            <div class="lasses">
+            <label for="#">Ginansio</label>
+            <input type="checkbox" name="Ginansio" id="">
+            <label for="#">Piscina</label>
+            <input type="checkbox" name="Piscina" id="">
+          </div>
+            <div class="lasses">
+            <label for="#">Refeitorio</label>
+            <input type="checkbox" name="Refeitorio" id="">
+            <label for="#">Campo</label>
+            <input type="checkbox" name="Campo" id="">
+          </div>
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>
+
+    <!--<main>
+      <div class="conteudo">
+        <div class="post">
+          <img src="paraiso1.jpeg" alt="">
+          <div class="post-cont">
+            <p class="titulo">Colegio paraiso</p>
+            <p>Escola Privada cita na Matola , com salas climatizadas , professores altamente competentes e 100% rigorosos </p>        
+          </div>
+
+        </div>
+      </div>
+    </main>-->
+
+    <div class="product-container">
+
+      <div class="container">
+        <!--- SIDEBAR -->
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Categoria</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon class="ion-android-close"></ion-icon>
+              </button>
+            </div>
+            
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="favicon/50_113701.svg" alt="Medicamentos" width="20" height="20"
+                      class="menu-title-img"> <p class="menu-title">A.E.C</p>
+                  </div>
+
+                  <div>
+                    <ion-icon class="ion-ios-plus-empty" class="add-icon"></ion-icon>
+                    <ion-icon class="ion-android-remove" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Alergias-e-infecções" class="sidebar-submenu-title">
+                      <p class="product-name">Xadrez</p>
+                      <data value="300" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Anti-Inflamatorios" class="sidebar-submenu-title">
+                      <p class="product-name">Taekwondo</p>
+                      <data value="60" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Asma" class="sidebar-submenu-title">
+                      <p class="product-name">Karate</p>
+                      <data value="50" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Genericos" class="sidebar-submenu-title">
+                      <p class="product-name">Musica</p>
+                      <data value="87" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Dor-e-Febre" class="sidebar-submenu-title">
+                      <p class="product-name">Dança</p>
+                      <data value="87" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Dor-de-Garganta" class="sidebar-submenu-title">
+                      <p class="product-name">Ginastica aerobica</p>
+                      <data value="87" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Gripe-e-resfriado" class="sidebar-submenu-title">
+                      <p class="product-name">Estudo Orientado</p>
+                      <data value="87" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="favicon/giving_medical_help_care_healthcare_hand_wash_icon_141641.svg" alt="cuidados diarios" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Professores</p>
+                  </div>
+
+                  <div>
+                    <ion-icon class="ion-ios-plus-empty" class="add-icon"></ion-icon>
+                    <ion-icon class="ion-android-remove" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Higiene-Pessoal" class="sidebar-submenu-title">
+                      <p class="product-name">Mestrados</p>
+                      <data value="45" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Higiene-Bucal" class="sidebar-submenu-title">
+                      <p class="product-name">Dotorados</p>
+                      <data value="75" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Desodorantes" class="sidebar-submenu-title">
+                      <p class="product-name">Licensiadoss</p>
+                      <data value="35" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Depilação" class="sidebar-submenu-title">
+                      <p class="product-name">Tecnicos </p>
+                      <data value="26" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Repelentes" class="sidebar-submenu-title">
+                      <p class="product-name">Cursos Basicos</p>
+                      <data value="26" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="favicon/002belezaq_120743.svg" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Localizaçao</p>
+                  </div>
+
+                  <div>
+                    <ion-icon class="ion-ios-plus-empty" class="add-icon"></ion-icon>
+                    <ion-icon class="ion-android-remove" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Cuidados-Com-a-Pele" class="sidebar-submenu-title">
+                      <p class="product-name">Maputo</p>
+                      <data value="46" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Colorações" class="sidebar-submenu-title">
+                      <p class="product-name">Gaza</p>
+                      <data value="73" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Maquiagem" class="sidebar-submenu-title">
+                      <p class="product-name">Inhambane</p>
+                      <data value="61" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Tratamento-Capilar" class="sidebar-submenu-title">
+                      <p class="product-name">Sofala</p>
+                      <data value="61" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Acessórios-para-Cabelos" class="sidebar-submenu-title">
+                      <p class="product-name">Manica</p>
+                      <data value="61" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Finalizadores-para-Cabelo" class="sidebar-submenu-title">
+                      <p class="product-name">Tete</p>
+                      <data value="61" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Unha" class="sidebar-submenu-title">
+                      <p class="product-name">Cabo Delgado</p>
+                      <data value="61" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="favicon/signup.svg" alt="Saude" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Mensalidade</p>
+                  </div>
+
+                  <div>
+                    <ion-icon class="ion-ios-plus-empty" class="add-icon"></ion-icon>
+                    <ion-icon class="ion-android-remove" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Bem-estar" class="sidebar-submenu-title">
+                      <p class="product-name">1500-2000</p>
+                      <data value="12" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Digestão" class="sidebar-submenu-title">
+                      <p class="product-name">2000-3500</p>
+                      <data value="60" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Diabetes" class="sidebar-submenu-title">
+                      <p class="product-name">2500-5000</p>
+                      <data value="50" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Saude-Sexual" class="sidebar-submenu-title">
+                      <p class="product-name">5000-6500</p>
+                      <data value="87" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Equipamentos-e-Testes" class="sidebar-submenu-title">
+                      <p class="product-name">6500-8000</p>
+                      <data value="87" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Visão" class="sidebar-submenu-title">
+                      <p class="product-name">8000-10500</p>
+                      <data value="87" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="categoria.php?categoria=Cuidado-Adulto" class="sidebar-submenu-title">
+                      <p class="product-name">10500 em diante</p>
+                      <data value="87" class="stock" title="Available Stock"></data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="product-box">
+
+          <!-- PRODUCT MINIMAL-->
+
+          <div class="product-minimal">
+
+            <div class="conteudo">
+              <div class="post">
+                <img src="paraiso1.jpeg" alt="">
+                <div class="post-cont">
+                  <p class="titulo">Colegio paraiso</p>
+                  <p>Escola Privada cita na Matola , com salas climatizadas , professores altamente competentes e 100% rigorosos </p>        
+                </div>
+      
+              </div>
+            </div>
+            <div class="product-minimal">
+
+              <div class="conteudo">
+                <div class="post">
+                  <img src="paraiso4.jpeg" alt="">
+                  <div class="post-cont">
+                    <p class="titulo">Colegio Arco-Iris</p>
+                    <p>Escola Privada cita na Matola , com salas climatizadas , professores altamente competentes e 100% rigorosos </p>        
+                  </div>
+        
+                </div>
+              </div>
+              <div class="product-minimal">
+
+                <div class="conteudo">
+                  <div class="post">
+                    <img src="paraiso2.jpeg" alt="">
+                    <div class="post-cont">
+                      <p class="titulo">Externato Cantinho Do Ceu</p>
+                      <br>
+                      <p>Escola Privada cita na Matola , com salas climatizadas , professores altamente competentes e 100% rigorosos </p> 
+                      <p>Transporte e alimentaçao nas nossas instalaçoes</p>       
+                    </div>
+          
+                  </div>
+                </div>
+           
+
+            
+          </div>
+
+        
+         
+  
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+  ></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
